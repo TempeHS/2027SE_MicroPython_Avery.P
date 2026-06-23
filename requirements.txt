@@ -1,0 +1,20 @@
+Probe 1:
+    - The line colour has to be a bright shade of yellow. The line will also have to be a width of 1 cm. Yellow is the colour of choice as it should stand out a reasonable amount and should be easily detectable by the colour sensor.
+    - If the robot loses sight of the line for 1 second, then it will stop, then rotate counter-clockwise until it detects the line and continue following the line until it hits a wall
+    - The curves will be a maximum of 90° 
+    - The line will be able to have some amount of gaps as long as the gap isn't too large that the sensor can no longer pick up the line, I do not know how big the sensor will be though and how much range it will detect
+
+Probe 2:
+    - An obstacle is counted when the mechatronic runs into and object and cannot get past it any more, be it a wall a person standing in the way or a cardboard box anything in the way will count as an obstacle
+    - 10cm, this number was arrived at so that it could have ample room to rotate and not forcibly run into the obstacle in it's way
+    - When the robot is currently observing an obstacle in it's path it will STOP for 10 seconds, then it will rotate 45°. It will continue until it detects that there is no obstacle in the way.
+    - WHAT???
+
+Probe 3:
+    - Reroute State, Following state, Lost state, End State, Idle State, Thinking State
+    - At a glance a supervisor would need to know the current state of the robot for easy debugging, at a request they should learn about what the sensor is currently detecting and where the robot thinks the nearest obstacle is.
+    - A letter can fit on their and each letter can be assigned to a certain state such as the first letter of each state (i.e. I for Idle state)
+    - The supervisor will know if it has crashed vs if it is finished or if it is thinking. The mechatronic will assumedly have a screen attached to it that will be capable of showing a letter to represent the current state, and if there is no screen then it can be requested from the code then.
+
+Probe 4:
+    - The floor workers and the developer are most likely the most affected apart from the supervisor, this is because the 
