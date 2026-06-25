@@ -1,4 +1,4 @@
-Probe 1:
+"Probe 1: 
     - The line colour has to be a bright shade of yellow. The line will also have to be a width of 1 cm. Yellow is the colour of choice as it should stand out a reasonable amount and should be easily detectable by the colour sensor.
     - If the robot loses sight of the line for 1 second, then it will stop, then rotate counter-clockwise until it detects the line and continue following the line until it hits a wall
     - The curves will be a maximum of 90° 
@@ -6,9 +6,9 @@ Probe 1:
 
 Probe 2:
     - An obstacle is counted when the mechatronic runs into and object and cannot get past it any more, be it a wall a person standing in the way or a cardboard box anything in the way will count as an obstacle
-    - 10cm, this number was arrived at so that it could have ample room to rotate and not forcibly run into the obstacle in it's way
-    - When the robot is currently observing an obstacle in it's path it will STOP for 10 seconds, then it will rotate 45°. It will continue until it detects that there is no obstacle in the way.
-    - WHAT???
+    - 10cm, this number was arrived at so that it could have ample room to rotate and not forcibly run into the obstacle in the robots way way
+    - When the robot is currently observing an obstacle in the robots path it will STOP for 10 seconds, then it will rotate 45°. It will continue until it detects that there is no obstacle in the way.
+    - One rangefinder will be on the front then one on the right. This is so that you can have the robot check the distance away from walls so it can rotate safely without running into an obstacle of some kind.
 
 Probe 3:
     - Reroute State, Following state, Lost state, End State, Idle State, Thinking State
@@ -17,4 +17,5 @@ Probe 3:
     - The supervisor will know if it has crashed vs if it is finished or if it is thinking. The mechatronic will assumedly have a screen attached to it that will be capable of showing a letter to represent the current state, and if there is no screen then it can be requested from the code then.
 
 Probe 4:
-    - The floor workers and the developer are most likely the most affected apart from the supervisor, this is because the 
+    - The floor workers and the developer are most likely the most affected apart from the supervisor, this is because the floor worker is most likely the one who will have to deal with the consequences of the robot messing up. The developers also suffer as if the robot has a flaw in the software the developer will have to retrieve the robot from where it is and reprogram it to not have flaws of any kind in the programming. The maintenance workers also have to deal with clean up most likely if the robot explodes or runs into a wall too hard and loses a piece they are going to have to retrieve every piece to make sure the robot can be sent back to the developer.
+    - The people who are observing the robot need to be capable of understanding what the robot is thinking at a current time. The robot should have a screen or something on it that will show how it is thinking through displaying its current state.
